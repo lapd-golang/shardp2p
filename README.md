@@ -9,7 +9,7 @@ See: [Prysmatic Labs P2P Specs Overview](https://docs.google.com/document/d/1K9N
 ## Running
 
 ```
-$ git clone https://github.com/prysmaticlabs/shardp2p
+$ git clone https://github.com/rauljordan/shardp2p
 $ go build
 $ ./shardp2p -shardID 1
 ```
