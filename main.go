@@ -24,10 +24,11 @@ func main() {
 	shardID := flag.Int("shardID", 1, "shard id to connect to")
 	flag.Parse()
 
+	// A map of shardIDs to a list of bootstrap nodes for each
 	bootstrapNodes := make(chan map[int][]host.Host)
 
 	// Initializes bootstrap nodes and makes them begin listening, outputs their
-	// full addresses in pretty print to logs
+	// full addresses
 	go func() {
 		log.Println("Starting...")
 		shardCount := 5
